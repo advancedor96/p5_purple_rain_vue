@@ -25,4 +25,4 @@ class Drop {
   }
   // this.x = random()
 }
-export default Drop;
+export { Drop };

@@ -6,7 +6,7 @@
 
 <script>
 import p5 from "p5";
-import Drop from "@/assets/Drop.js";
+import { Drop } from "@/assets/Drop.js";
 export default {
   name: "HelloWorld",
   data() {
@@ -22,8 +22,8 @@ export default {
       p.setup = () => {
         // this.canvas = p.createCanvas(700, 400);
         let canvas = p.createCanvas(
-          window.innerWidth - 15,
-          window.innerHeight - 15
+          this.$el.clientWidth,
+          this.$el.clientHeight - 5
         );
         // this.canvas.parent(this.$refs.canvas);
         canvas.parent(this.$refs.canvas);
